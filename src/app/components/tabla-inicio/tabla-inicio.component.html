@@ -1,0 +1,112 @@
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="d-flex justify-content-center">
+        <div class="card" style="width: 18rem; margin-right: 1rem;">
+          <img src="{{phones[0].imagen}}" class="card-img-top" style="height: 250px; width: 100%; object-fit: cover;">
+          <div class="card-body">
+            <h4 class="card-title">{{phones[0].modelo}}</h4>
+            <p class="card-text">Almacenamiento: {{phones[0].almacenamiento}}</p>
+            <button class="btn btn-primary" [routerLink]="['/detalles', phones[0].id]">Ver más detalles</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; margin-right: 1rem;">
+          <img src="{{phones[1].imagen}}" class="card-img-top" style="height: 250px; width: 100%; object-fit: cover;">
+          <div class="card-body">
+            <h4 class="card-title">{{phones[1].modelo}}</h4>
+            <p class="card-text">Almacenamiento: {{phones[1].almacenamiento}}</p>
+            <button class="btn btn-primary" [routerLink]="['/detalles', phones[1].id]">Ver más detalles</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; margin-right: 1rem;">
+          <img src="{{phones[2].imagen}}" class="card-img-top" style="height: 250px; width: 100%; object-fit: cover;">
+          <div class="card-body">
+            <h4 class="card-title">{{phones[2].modelo}}</h4>
+            <p class="card-text">Almacenamiento: {{phones[2].almacenamiento}}</p>
+            <button class="btn btn-primary" [routerLink]="['/detalles', phones[2].id]">Ver más detalles</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="d-flex justify-content-center">
+        <div class="card" style="width: 18rem; margin-right: 1rem;">
+          <img src="{{phones[3].imagen}}" class="card-img-top" style="height: 250px; width: 100%; object-fit: cover;">
+          <div class="card-body">
+            <h4 class="card-title">{{phones[3].modelo}}</h4>
+            <p class="card-text">Almacenamiento: {{phones[3].almacenamiento}}</p>
+            <button class="btn btn-primary" [routerLink]="['/detalles', phones[3].id]">Ver más detalles</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; margin-right: 1rem;">
+          <img src="{{phones[4].imagen}}" class="card-img-top" style="height: 250px; width: 100%; object-fit: cover;">
+          <div class="card-body">
+            <h4 class="card-title">{{phones[4].modelo}}</h4>
+            <p class="card-text">Almacenamiento: {{phones[4].almacenamiento}}</p>
+            <button class="btn btn-primary" [routerLink]="['/detalles', phones[4].id]">Ver más detalles</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; margin-right: 1rem;">
+          <img src="{{phones[5].imagen}}" class="card-img-top" style="height: 250px; width: 100%; object-fit: cover;">
+          <div class="card-body">
+            <h4 class="card-title">{{phones[5].modelo}}</h4>
+            <p class="card-text">Almacenamiento: {{phones[5].almacenamiento}}</p>
+            <button class="btn btn-primary" [routerLink]="['/detalles', phones[5].id]">Ver más detalles</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="d-flex justify-content-center">
+        <div class="card" style="width: 18rem; margin-right: 1rem;">
+          <img src="{{phones[6].imagen}}" class="card-img-top" style="height: 250px; width: 100%; object-fit: cover;">
+          <div class="card-body">
+            <h4 class="card-title">{{phones[6].modelo}}</h4>
+            <p class="card-text">Almacenamiento: {{phones[6].almacenamiento}}</p>
+            <button class="btn btn-primary" [routerLink]="['/detalles', phones[6].id]">Ver más detalles</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; margin-right: 1rem;">
+          <img src="{{phones[7].imagen}}" class="card-img-top" style="height: 250px; width: 100%; object-fit: cover;">
+          <div class="card-body">
+            <h4 class="card-title">{{phones[7].modelo}}</h4>
+            <p class="card-text">Almacenamiento: {{phones[7].almacenamiento}}</p>
+            <button class="btn btn-primary" [routerLink]="['/detalles', phones[7].id]">Ver más detalles</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; margin-right: 1rem;">
+          <img src="{{phones[8].imagen}}" class="card-img-top" style="height: 250px; width: 100%; object-fit: cover;">
+          <div class="card-body">
+            <h4 class="card-title">{{phones[8].modelo}}</h4>
+            <p class="card-text">Almacenamiento: {{phones[8].almacenamiento}}</p>
+            <button class="btn btn-primary" [routerLink]="['/detalles', phones[8].id]">Ver más detalles</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev" style="background-color: black;">
+    <span class="carousel-control-prev-icon" style="background-color: black;"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next" style="background-color: black;">
+    <span class="carousel-control-next-icon" style="background-color: black;"></span>
+  </button>
+</div>

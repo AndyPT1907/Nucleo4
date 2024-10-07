@@ -1,0 +1,66 @@
+<button class="btn btn-secondary" (click)="cambiarModo()">Cambiar Modo</button>
+
+<h1>Búsqueda por Marca</h1>
+
+<div class="filter-section">
+  <select name="" id="" [(ngModel)]="busqueda">
+    <option value="">Todos los colores</option>
+    <option value="apple">Apple</option>
+    <option value="Samsung">Samsung</option>
+    <option value="Google">Google</option>
+    <option value="Xiaomi">Xiaomi</option>
+    <option value="OnePlus">OnePlus</option>
+    <option value="Huawei">Huawei</option>
+    <option value="Sony">Sony</option>
+    <option value="Oppo">Oppo</option>
+    <option value="Motorola">Motorola</option>
+    <option value="Nokia">Nokia</option>
+  </select>
+</div>
+
+@if (vistaGaleria) {
+  <div class="card-container">
+    @for (item of filtrarPorMarca(phones, busqueda); track item) {
+      <div class="card" [ngClass]="{ 'modo-nocturno': modoNocturno }">
+        <img class="card-img-top" src="{{ item.imagen }}" alt="Card image">
+        <div class="card-body">
+          <p class="card-text">{{ modoEspanol ? 'Precio' : 'Price' }}: ${{ item.precio }}</p>
+          <p class="card-text">{{ modoEspanol ? 'Talla' : 'Size' }}: {{ item.marca }}</p>
+          <p class="card-text">{{ modoEspanol ? 'Material' : 'Material' }}: {{ item.modelo }}</p>
+          <button class="btn btn-primary" [routerLink]="['/detalles', item.id]">
+            {{ modoEspanol ? 'Ver más detalles' : 'See details' }}
+          </button>
+        </div>
+      </div>
+    }
+  </div>
+} @else {
+  <table class="table" [ngClass]="{ 'modo-nocturno': modoNocturno }">
+    <thead>
+      <tr>
+        <th>{{ modoEspanol ? 'Imagen' : 'Image' }}</th>
+        <th>{{ modoEspanol ? 'Precio' : 'Price' }}</th>
+        <th>{{ modoEspanol ? 'Talla' : 'Size' }}</th>
+        <th>{{ modoEspanol ? 'Material' : 'Material' }}</th>
+        <th>{{ modoEspanol ? 'Almacenamiento' : 'Storage' }}</th>
+        <th>{{ modoEspanol ? 'Acciones' : 'Actions' }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (item of filtrarPorMarca(phones, busqueda); track item) {
+        <tr>
+          <td><img src="{{ item.imagen }}" alt="Imagen" style="width: 100px;"></td>
+          <td>${{ item.precio }}</td>
+          <td>{{ item.marca }}</td>
+          <td>{{ item.modelo }}</td>
+          <td>{{ item.almacenamiento }}</td>
+          <td>
+            <button class="btn btn-primary" [routerLink]="['/detalles', item.id]">
+              {{ modoEspanol ? 'Ver más detalles' : 'See details' }}
+            </button>
+          </td>
+        </tr>
+      }
+    </tbody>
+  </table>
+}

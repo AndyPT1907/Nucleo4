@@ -1,0 +1,94 @@
+{
+    "phones":[
+        {
+            "id": 1,
+            "marca": "Apple",
+            "modelo": "iPhone 14",
+            "almacenamiento": "128GB",
+            "color": "Negro",
+            "precio": 999.99,
+            "imagen": "https://app.pardux.com/render/img-webp/107/premiumtech/ASFASFDRAW-651e15b959eb4"
+        },
+        {
+            "id": 2,
+            "marca": "Samsung",
+            "modelo": "Galaxy S23",
+            "almacenamiento": "256GB",
+            "color": "Blanco",
+            "precio": 899.99,
+            "imagen": "https://catalogo.claro.com.ec/uploads/imgs/productos/samsung-galaxy-s23-128gb-buds2/lavender/zoom/04-samsung-galaxy-s23-128gb-buds2-lavender-other.png"
+        },
+        {
+            "id": 3,
+            "marca": "Google",
+            "modelo": "Pixel 7",
+            "almacenamiento": "128GB",
+            "color": "Verde",
+            "precio": 699.99,
+            "imagen": "https://i.blogs.es/dc1187/google-pixel-7-4/650_1200.jpg"
+        },
+        {
+            "id": 4,
+            "marca": "Xiaomi",
+            "modelo": "Mi 12",
+            "almacenamiento": "256GB",
+            "color": "Gris",
+            "precio": 749.99,
+            "imagen": "https://http2.mlstatic.com/D_NQ_NP_708882-MLA54409206157_032023-O.webp"
+        },
+        {
+            "id": 5,
+            "marca": "OnePlus",
+            "modelo": "OnePlus 11",
+            "almacenamiento": "128GB",
+            "color": "Rojo",
+            "precio": 799.99,
+            "imagen": "https://oneplus.com.co/oneplus11/spec/oasis.opstatics.com/content/dam/oasis/page/2023/na/oneplus-11/specs/green-img.png"
+        },
+        {
+            "id": 6,
+            "marca": "Huawei",
+            "modelo": "P50 Pro",
+            "almacenamiento": "256GB",
+            "color": "Oro",
+            "precio": 999.99,
+            "imagen": "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p50-pro/images/intro/kv-back.png"
+        },
+        {
+            "id": 7,
+            "marca": "Sony",
+            "modelo": "Xperia 1 IV",
+            "almacenamiento": "256GB",
+            "color": "Negro",
+            "precio": 1099.99,
+            "imagen": "https://sony.scene7.com/is/image/sonyglobalsolutions/PDX-223_black_v01-1?$S7Product$&fmt=png-alpha"
+        },
+        {
+            "id": 8,
+            "marca": "Oppo",
+            "modelo": "Find X5 Pro",
+            "almacenamiento": "256GB",
+            "color": "Blanco",
+            "precio": 999.99,
+            "imagen": "https://m.media-amazon.com/images/I/71wvEt9ODwL._AC_SL1412_.jpg"
+        },
+        {
+            "id": 9,
+            "marca": "Motorola",
+            "modelo": "Moto G Stylus 5G",
+            "almacenamiento": "128GB",
+            "color": "Azul",
+            "precio": 499.99,
+            "imagen": "https://i5.walmartimages.com/seo/Motorola-Moto-G-Stylus-5G-Metro-Only-Green-128GB-6-8-in-Grade-B-XT2131_7d4be038-6ff5-4216-a9ec-c28581fe378d.73244c0f1d47188c1cd16f50b0653494.jpeg"
+        },
+        {
+            "id": 10,
+            "marca": "Nokia",
+            "modelo": "G50",
+            "almacenamiento": "64GB",
+            "color": "Gris",
+            "precio": 299.99,
+            "imagen": "https://i.blogs.es/821b82/captura-de-pantalla-2021-03-25-a-las-16.23.17/1366_2000.jpg"
+        }
+       ] 
+}

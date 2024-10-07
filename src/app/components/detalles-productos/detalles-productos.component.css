@@ -1,0 +1,39 @@
+/* Estilo para el contenedor */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    background-color: #f5f5f5; /* Color de fondo suave */
+}
+
+/* Estilo para la tarjeta */
+.card {
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    background-color: white;
+    overflow: hidden;
+}
+
+/* Imagen de la tarjeta */
+.card-img-top {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Cuerpo de la tarjeta */
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Títulos */
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+   
+}
